@@ -1,72 +1,140 @@
-*body{
+body{
     margin: 0;
     padding: 0;
-    font-family:  Arial;
+    font-family:  Arial, Helvetica, sans-serif;
+    background-image: url("../images/qbkls.png");
     color: #777777;
+    height: 100%;
 }
 
 .container{
     max-width: 960px;
-    width: 96%;
     margin: auto;
+    overflow:hidden;
 }
 
-/* Header*/
+/* ------Header-----*/
 header{
-    background: #ffffff;
-    margin-bottom: 20px;
-    overflow: hidden;
+    background-color: #ffffff;
+    margin-bottom: 20px 5px;
 }
 
-.logo{
+#logo{
     float: left;
-    margin-top: 20px;
-    background: #4aaaa5;
-}
-
-h2{
+    margin-top: 10px 5px;
+    background-color: #4aaaa5;
     color: #ffffff;
-    font-family: Serif;
+    padding: 0px 15px 0px 15px;
 }
 
 nav{
-    float: right;
+    float:right;
     line-height: 70px;
-    font-family: serif;
-    color: #777777;
-    background: #ffffff;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+a:active{
+    color: green;
 }
 
 nav li{
-    display: inline-block;
+    display:inline-block;
     padding: 5px 20px;
     margin-left: 10px;
-    background: #ffffff
     line-height: normal;
 }
 
-nav li a{
-    text-decoration: no;
+/*-----CONTENT-----*/
+.wrapper{
+    width: 960px;
+    margin: auto;
+    background-color: #ffffff;
+}
+.title{
+    Font-size: 20px;
+    color: #4aaaa5;
+    margin-top: 15px;
+    padding: 3px 30px;
 }
 
-nav li a:hover{
-    color:#4aaaa5;
+.line{
+    width: 94%; height: 4px; background: #dddddd;
+    margin: auto;
 }
-
-/*this doesn't seem to work*/
-ul li a:active{
-    border-bottom: black;
+#profile_picture{
+    float: left;
+    overflow:hidden;
+    padding: 25px;
 }
-
-.container{
-    background: #ffffff:
-    padding: 10px;
+.content{
+    font-size: 16px;
+    text-indent: 50px;
+    margin: auto;
+    text-align: left;
+    padding: 18px;
 }
 
 .footer{
-  background: #666666;
-  color: #ffffff;
-  font-family: serif;  
-  text-align: center;
-  padding: 10px 20px;
+    text-align: center ;
+    background-color: #777777;
+    color: #ffffff;
+    width: 100%;
+    position: absolute;
+    height: 25px;
+    padding: 20px;
+    bottom: 0;
+    border-top: 8px solid #4aaaa5;
 }
+
+/* design for contact page*/
+.wrapper-contact{
+    width: 960px;
+    margin: auto;
+    background-color:#ffffff;
+}
+
+.contact-form{
+    border-radius: 5px;
+    padding: 20px;
+}
+
+
+input [type=text], textarea {
+    width: 96%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing:border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color:#4aaaa5;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color:white;
+    color: black;
+}
+
+
+/* design for Portfolio page*/
+.wrapper-portfolio{
+    width: 960px;
+    margin: auto;
+    background-color:#ffffff;
+}
+
