@@ -86,7 +86,7 @@ nav li{
     background-color: #777777;
     color: #ffffff;
     width: 100%;
-    position: absolute;
+    position: fixed;
     height: 25px;
     padding: 20px;
     bottom: 0;
@@ -137,5 +137,39 @@ input[type=submit]:hover {
     width: 960px;
     margin: auto;
     background-color:#ffffff;
+    margin-bottom: 8%;
 }
+
+.row {
+    margin 8px;
+}
+
+.column{
+    float: left;
+    width: 35%;
+    margin: auto;
+    
+}
+
+/* clear floats after rows*/
+.row:after {
+    content:"";
+    display: table;
+    clear: both;
+}
+
+.content{
+    position: relative;
+    margin: 0 auto;
+    max-width: 800px;
+}
+.text{
+    position: absolute;
+    bottom: 35px;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    margin-left: 15%;
+    padding-right: 25px;
+}
+
 
