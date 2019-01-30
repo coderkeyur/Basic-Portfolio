@@ -17,11 +17,11 @@ body{
 header{
     background-color: #ffffff;
     margin-bottom: 20px 5px;
+    border-bottom: 1px solid #cccccc;
 }
 
 #logo{
     float: left;
-    margin-top: 10px 5px;
     background-color: #4aaaa5;
     color: #ffffff;
     padding: 0px 15px 0px 15px;
@@ -29,12 +29,27 @@ header{
 
 nav{
     float:right;
-    line-height: 70px;
+    line-height: 65px;
+    
+}
+nav li{
+    display:inline-block;
+    padding: 5px 15px;
+    margin-left: 4px;
+    line-height: normal;
 }
 
-a:link {
+a:link{
     text-decoration: none;
+    color: #cccccc;
+    border-right: 1px solid #cccccc;
+    padding-right: 23px;
 }
+nav li:last-child a{
+    border-right: none;
+    padding-right: none;
+}
+
 
 a:hover{
     text-decoration: underline;
@@ -44,18 +59,15 @@ a:active{
     color: green;
 }
 
-nav li{
-    display:inline-block;
-    padding: 5px 20px;
-    margin-left: 10px;
-    line-height: normal;
-}
+
 
 /*-----CONTENT-----*/
 .wrapper{
     width: 960px;
     margin: auto;
     background-color: #ffffff;
+    margin-top: 20px;
+    border:  1px solid #cccccc;
 }
 .title{
     Font-size: 20px;
@@ -98,6 +110,8 @@ nav li{
     width: 960px;
     margin: auto;
     background-color:#ffffff;
+    margin-top: 20px;
+    border:  1px solid #cccccc;
 }
 
 .contact-form{
@@ -137,11 +151,13 @@ input[type=submit]:hover {
     width: 960px;
     margin: auto;
     background-color:#ffffff;
+    margin-top: 20px;
+    border:  1px solid #cccccc;
     margin-bottom: 8%;
 }
 
 .row {
-    margin 8px;
+    margin: 8px;
 }
 
 .column{
